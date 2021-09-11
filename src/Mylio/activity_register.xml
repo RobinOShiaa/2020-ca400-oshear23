@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@mipmap/ic_mylio" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="90dp"
+        android:width="150dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/username"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background ="#FFFFFF"
+        android:drawableLeft = "@drawable/password"
+
+        android:hint="@string/password"/>
+
+    <EditText
+        android:id="@+id/cnf_Password"
+        android:width="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background ="#FFFFFF"
+        android:drawableLeft = "@drawable/password"
+
+        android:hint="@string/cnf_password"/>
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:width="120dp"
+        android:layout_marginTop="80dp"
+        android:text = "@string/Reg_details"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/registered"/>
+
+        <TextView
+            android:id="@+id/textview_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle = "bold"
+            android:textSize="16sp"
+            android:text = "@string/login"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
